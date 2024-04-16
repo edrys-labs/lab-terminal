@@ -1,0 +1,384 @@
+id: z5NH94vk86m35HxJ
+createdBy: 6cb8dad0sxSYxp
+dateCreated: 1713192447954
+name: 'Lab-Terminal (Basics)'
+meta:
+  logo: >-
+    https://raw.githubusercontent.com/edrys-labs/lab-linux/main/media/terminal-basics.jpg
+  description: >-
+    Discover essential Bash commands with our step-by-step tutorial designed for
+    beginners! Learn how to create, navigate, and manage files and directories
+    in a Linux environment, from creating your first directory to cleaning up
+    your workspace. This easy-to-follow guide will equip you with the
+    fundamental skills needed to confidently use Bash for basic file management.
+    Perfect for students and newcomers to the command line.
+  selfAssign: true
+  defaultNumberOfRooms: 0
+members:
+  teacher: []
+  student: []
+modules:
+  - url: >-
+      https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html
+    config: |-
+      # Welcome to Lab-Linux-Basic
+
+      __Welcome to the Linux Terminal Basics tutorial.__
+
+      The Bash terminal in Linux is like a magic wand for your computer—it lets you command your computer by typing instructions.
+      Think of it as a special kind of text messaging where instead of sending texts to your friends, you send messages to your computer to tell it what to do!
+
+      Here’s why the Bash terminal is interesting for learning:
+
+      1. **Direct communication**:
+         Using the Bash terminal, you can talk directly to your computer.
+         You tell it to do tasks like opening files, running programs, or even checking what's in a folder, all by typing commands.
+
+      2. **Powerful tool**:
+         With Bash, you can do complex tasks quickly and efficiently.
+         It's like having a superpower that lets you control your computer with just a few keystrokes.
+
+      3. **Foundation for programming**:
+         Learning to use Bash gives you a great start in the world of programming.
+         It teaches you the logic behind how commands work, which is useful for any coding language you might learn later.
+
+      The Bash terminal is not just about typing commands; it's about making your computer do exactly what you want in a quick and powerful way.
+      It's an essential skill for anyone interested in technology, making you a smarter and more capable computer user!
+
+      __Visit a station by clicking onto it and then explore the terminal ;-)__
+
+    studentConfig: ''
+    teacherConfig: >-
+      ## Welcome for Teachers
+
+
+      > This can be used as a base laboratory to create further and more
+      elaborate labs with [edrys-Lite](https://edrys-labs.github.io).
+
+      > You are currently in the Lobby. If there is a station available you can
+      switch to it and try out the terminal.
+
+      > Otherwise, if you are in teacher-mode you can share a lab by clicking
+      onto `setting` >> `station` and then by clicking the presented link,
+
+      > which is the same as the current link, but only with the word `station`
+      instead of `classroom`.
+    stationConfig: ''
+    showInCustom: lobby
+    width: full
+    height: huge
+  - url: https://edrys-labs.github.io/module-pyxtermjs/index.html
+    config: ''
+    studentConfig: ''
+    teacherConfig: ''
+    stationConfig:
+      server: http://localhost:5000/pty
+      execute: execute
+      script: echo $CODE | base64 --decode
+      enable:
+        teacher: true
+        student: true
+    showInCustom: station
+    width: full
+    height: huge
+  - url: >-
+      https://raw.githubusercontent.com/edrys-labs/module-markdown-it/2.0.0/index.html
+    config: >-
+      # Welcome to the Station
+
+
+      This is a terminal that you can use for experimenting with Linux
+
+
+      ### Bash Commands Tutorial
+
+
+      **Step 1: Check your current directory**
+
+      ```bash
+
+      pwd
+
+      ```
+
+
+      This will show you the current directory path to confirm you are where you
+      think you are.
+
+
+      **Step 2: Create a new directory**
+
+      ```bash
+
+      mkdir Projects
+
+      ```
+
+      This creates a new folder named "Projects".
+
+
+      **Step 3: Move into your new directory**
+
+      ```bash
+
+      cd Projects
+
+      ```
+
+      Now you are inside the "Projects" folder.
+
+
+      **Step 4: Create another directory inside 'Projects'**
+
+      ```bash
+
+      mkdir MyFirstProject
+
+      ```
+
+      You've now created another folder inside "Projects" called
+      "MyFirstProject".
+
+
+      **Step 5: Enter the 'MyFirstProject' directory**
+
+      ```bash
+
+      cd MyFirstProject
+
+      ```
+
+      Move into your newly created project folder.
+
+
+      **Step 6: Create a new file**
+
+      ```bash
+
+      touch notes.txt
+
+      ```
+
+      This command creates a new empty file named "notes.txt".
+
+
+      **Step 7: List files in the directory**
+
+      ```bash
+
+      ls
+
+      ```
+
+      You should see the "notes.txt" file listed.
+
+
+      **Step 8: Write something in 'notes.txt'**
+
+      ```bash
+
+      echo "Hello, this is my first project file!" > notes.txt
+
+      ```
+
+      This command writes the sentence inside the quotes to "notes.txt".
+
+
+      **Step 9: Display the contents of 'notes.txt'**
+
+      ```bash
+
+      cat notes.txt
+
+      ```
+
+      You can see what you just wrote in the file.
+
+
+      **Step 10: Make a copy of 'notes.txt'**
+
+      ```bash
+
+      cp notes.txt backup.txt
+
+      ```
+
+      Now you have a copy of "notes.txt" named "backup.txt".
+
+
+      **Step 11: Rename the copy to 'old_notes.txt'**
+
+      ```bash
+
+      mv backup.txt old_notes.txt
+
+      ```
+
+      The copy is now renamed to "old_notes.txt".
+
+
+      **Step 12: Delete 'old_notes.txt'**
+
+      ```bash
+
+      rm old_notes.txt
+
+      ```
+
+      You've deleted the "old_notes.txt" file.
+
+
+      **Step 13: Go back to the 'Projects' directory**
+
+      ```bash
+
+      cd ..
+
+      ```
+
+      Now you are back in the "Projects" directory.
+
+
+      **Step 14: Remove the 'MyFirstProject' directory**
+
+      ```bash
+
+      rmdir MyFirstProject
+
+      ```
+
+      Since "MyFirstProject" is empty now, you can delete it.
+
+
+      **Step 15: List the contents of 'Projects' to confirm**
+
+      ```bash
+
+      ls
+
+      ```
+
+      It should show empty as "MyFirstProject" has been deleted.
+
+
+      This tutorial takes you through a basic workflow of creating,
+      manipulating, and cleaning up files and directories using Bash commands.
+      Each step builds on the previous one, helping you understand how these
+      commands work in a real scenario.
+    studentConfig: ''
+    teacherConfig: ''
+    stationConfig: >-
+      ## Instructions for Station-Sharing 
+
+
+      You are currently responsible for sharing a station of this lab.
+
+      You have multiple options to share a or your terminal.
+
+      Therefor we use the pyxtermjs - terminal server from:
+
+
+      https://github.com/edrys-labs/module-pyxtermjs
+
+
+      ### Using Docker
+
+
+      If you haven't done it so far, install
+      [docker](https://docs.docker.com/engine/install/).
+
+      Or, follow one of the instruction-videos for your system:
+
+
+      <details>
+
+      <summary>Install Docker on Linux</summary>  
+
+      <iframe
+        style="width: 100%; aspect-ratio: 16 / 9"
+        src="https://www.youtube.com/embed/cqbh-RneBlk?si=juvUM5d2OSZ28WBv"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      </details>
+
+
+      <details>
+
+      <summary>Install Docker on Windows</summary>
+
+      <iframe
+        style="width: 100%; aspect-ratio: 16 / 9"
+        src="https://www.youtube.com/embed/WDEdRmTCSs8?si=X0agStn1akNcZLGu"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      </details>
+
+
+      <details>
+
+      <summary>Install Docker on MacOS</summary>
+
+      <iframe
+        style="width: 100%; aspect-ratio: 16 / 9"
+        src="https://www.youtube.com/embed/-EXlfSsP49A?si=OZ_l4_2hDKb6ULQ_"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      </details>
+
+
+      Then the only thing that is required is to run the following command:
+
+
+      ```bash
+
+      docker run -it -p 5000:5000 crosslab/edrys_pyxtermjs:latest
+
+      ```
+
+
+      This will download the pyxtermjs terminal-server from docker-hub and run
+      it in a secure environment.
+
+
+      ### Using Python
+
+
+      You can also share your terminal directly via Python, visit the following
+      project
+
+
+      https://github.com/edrys-labs/module-pyxtermjs
+
+
+      ... the easiest way is to perform the following steps:
+
+
+      ``` bash
+
+      # 1. clone the repository or download the folder manually
+
+      git clone https://github.com/edrys-labs/module-pyxtermjs
+
+
+      # 2. install all required sources
+
+      pip3 install -r requirements.txt
+
+
+      # 3. run the terminal-server
+
+      python3 -m pyxtermjs --cors True --command bash --port 5000
+
+      ```
+    showInCustom: station
+    width: half
+    height: huge
