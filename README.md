@@ -1,10 +1,15 @@
 # Edrys: Terminal Laboratory
 
-To make use of this laboratory configuration, simply import one of the following configurations with the full URL into [edrys-Lite](https://edrys-labs.github.io):
+To make use of this laboratory configuration, simply click on one of the deploy buttons ore import one of the configurations below with the full URL into [edrys-Lite](https://edrys-labs.github.io):
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-terminal/main/laboratory/terminal.yaml`](https://raw.githubusercontent.com/edrys-labs/lab-terminal/main/laboratory/terminal.yaml)
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://edrys-labs.github.io/?/deploy/https://raw.githubusercontent.com/edrys-labs/lab-terminal/main/laboratory/terminal.yaml)
 
-[`https://raw.githubusercontent.com/edrys-labs/lab-terminal/main/laboratory/terminal.json`](https://raw.githubusercontent.com/edrys-labs/lab-terminal/main/laboratory/terminal.json)
+https://raw.githubusercontent.com/edrys-labs/lab-terminal/main/laboratory/terminal.yaml
+
+
+[<img src="https://img.shields.io/badge/%F0%9F%9A%80%20-%20Deploy%20Lab%20-%20light?style=plastic" height="25" />](https://edrys-labs.github.io/?/deploy/https://raw.githubusercontent.com/edrys-labs/lab-terminal/main/laboratory/terminal.json)
+
+https://raw.githubusercontent.com/edrys-labs/lab-terminal/main/laboratory/terminal.json
 
 ... or download them to your local machine and import them from there.
 
